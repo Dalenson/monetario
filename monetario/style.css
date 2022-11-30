@@ -1,0 +1,285 @@
+@import url(https://fonts.googleapis.com/css?family=Jost);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
+
+
+* {
+	margin: 0;
+	padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.toast{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /* display: none; */
+}
+
+.conteudo{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btsalvar{
+  width: 100px;
+}
+
+.meshover:hover{
+  color: cornflowerblue;
+}
+
+.formCadastro h1{
+  font-family: "Russo One";
+  font-size: 4rem;
+}
+
+.formCadastro span{
+  height: 50px;
+}
+
+.optionsMes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mes{
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Rubik';
+}
+
+.label{
+  margin-top: 1rem;
+}
+
+.entradasshow{
+  max-height: 250px;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+.totalizador{
+}
+
+.totalizador h1{
+  font-family: "Rubik";
+  font-size: 25px;
+}
+
+.green{
+  color:green;
+}
+
+.red{
+  color:red;
+}
+
+.saldo{
+  margin-left: auto;
+}
+
+.saldo h1{
+  font-family: "Rubik";
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.saidasshow{
+  max-height: 250px;
+  overflow: auto;
+  position: relative;
+}
+
+.show{
+  width: 50%;
+  padding: 4% 4% 4% 4%;
+}
+
+.up{
+  background-color: red;
+}
+
+.formCadastro{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+}
+
+.form-group{
+  width: 500px;
+}
+
+.form-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.btn{
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.buttonSubmit{
+  float: right;
+}
+
+.ee{
+  background-color: #00ff0017;
+  border: solid black 2px;
+}
+
+.ss{
+  background-color: #ff00000d;
+  border: solid black 2px;
+}
+
+.closeList{
+  position: absolute;
+		top: 0px;
+		right: 0px;
+		color: #6c7077;
+		padding: 10px 10px;
+		cursor: pointer;
+}
+
+.form-group ul{
+  border-left: solid 1px #0000003b;
+  border-right: solid 1px #0000003b;
+  border-bottom: solid 1px #0000003b;
+}
+
+.form-group ul li{
+  list-style:none;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.form-group ul li .create{
+  list-style:none;
+  color: #0071bc;
+  cursor: pointer;
+}
+
+.form-group ul li:hover{
+  background-color: #0071bc;
+  color: white;
+}
+
+.form-group ul li:hover .create{
+  color: white;
+}
+
+.excluir{
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #e9e9e9;
+}
+
+.filter{
+  /* position: fixed; */
+  width: 500px;
+  z-index: 1;
+  background-color: white;
+}
+
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.graficos{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left{
+  width: 50%;
+}
+
+.right{
+  width: 50%;
+}
+
+
+
+@media (max-width: 480px) {
+
+  .conteudo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formCadastro{
+    width: 100%;
+    display: block;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .form-group{
+    width:auto;
+    margin: 0;
+  }
+
+  .graficos{
+    height: auto;
+  }
+
+  .show {
+    width: 100%;
+  }
+
+}
