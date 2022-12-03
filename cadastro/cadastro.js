@@ -15,7 +15,7 @@ app.controller("Rest", function ($scope, $cookies, $http) {
 
     var req = {
       method: "POST",
-      url: "http://localhost:8081/api/usuarios",
+      url: "https://monetario-back.onrender.com/api/usuarios",
       data: data
     }
   

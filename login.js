@@ -14,7 +14,7 @@ app.controller("Rest", function ($scope, $cookies, $http) {
 
     var req = {
       method: "POST",
-      url: "http://localhost:8081/api/usuarios/login",
+      url: "https://monetario-back.onrender.com/api/usuarios/login",
       data: data
     }
     removeNotificacao();

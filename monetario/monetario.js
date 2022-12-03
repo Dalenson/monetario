@@ -211,14 +211,14 @@ window.addEventListener('load', function(event) {
     if($('#valor').val() != '' && $('#data').val() != '' && $scope.tipo != ''){
       url = "";
       if($scope.tipo == 'up'){
-        url = "http://localhost:8081/api/monetario/entradas";
+        url = "https://monetario-back.onrender.com/api/monetario/entradas";
         data = {
           dataEntrada: $('#data').val().substring(0,10),
           valor: $('#valor').val().replace('.','').replace(',','.'),
           tipo: $('#filtro').val()
         }
       }else{
-        url = "http://localhost:8081/api/monetario/saidas";
+        url = "https://monetario-back.onrender.com/api/monetario/saidas";
         data = {
           dataSaida: $('#data').val().substring(0,10),
           valor: $('#valor').val().replace('.','').replace(',','.'),
@@ -251,13 +251,13 @@ window.addEventListener('load', function(event) {
 
     var reqEntradas = {
       method: "GET",
-      url: "http://localhost:8081/api/monetario/entradas",
+      url: "https://monetario-back.onrender.com/api/monetario/entradas",
       headers: {'Authorization': $scope.authorization}
     }
   
     var reqSaidas = {
       method: "GET",
-      url: "http://localhost:8081/api/monetario/saidas",
+      url: "https://monetario-back.onrender.com/api/monetario/saidas",
       headers: {'Authorization': $scope.authorization}
     }
   
@@ -296,7 +296,7 @@ window.addEventListener('load', function(event) {
     $scope.pesquisa = $('#filtro').val();
     var req = {
       method: "GET",
-      url: "http://localhost:8081/api/monetario/entradas/tipos",
+      url: "https://monetario-back.onrender.com/api/monetario/entradas/tipos",
       headers: {'Authorization': $scope.authorization}
     }
     $http(req).then(function (data) {
@@ -317,7 +317,7 @@ window.addEventListener('load', function(event) {
       data = {"nome":value}
       var req = {
         method: "POST",
-        url: "http://localhost:8081/api/monetario/entradas/tipos",
+        url: "https://monetario-back.onrender.com/api/monetario/entradas/tipos",
         headers: {'Authorization': $scope.authorization},
         data: data
       }
@@ -337,7 +337,7 @@ window.addEventListener('load', function(event) {
   function excluirSaida(id){
       var req = {
         method: "DELETE",
-        url: "http://localhost:8081/api/monetario/saida/"+id,
+        url: "https://monetario-back.onrender.com/api/monetario/saida/"+id,
         headers: {'Authorization': $scope.authorization}
       }
       $http(req).then(function (data) {
@@ -350,7 +350,7 @@ window.addEventListener('load', function(event) {
   function excluirEntrada(id){
     var req = {
       method: "DELETE",
-      url: "http://localhost:8081/api/monetario/entrada/"+id,
+      url: "https://monetario-back.onrender.com/api/monetario/entrada/"+id,
       headers: {'Authorization': $scope.authorization}
     }
     $http(req).then(function (data) {
