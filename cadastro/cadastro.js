@@ -21,7 +21,7 @@ app.controller("Rest", function ($scope, $cookies, $http) {
   
     $http(req).then(function (data) {
       $cookies.put('autorization', data.data.token)
-      window.location.href = "http://localhost:8082/monetario/monetario.html";
+      window.location.href = "https://monetario-back.onrender.com/monetario/monetario.html";
     });
 
   }

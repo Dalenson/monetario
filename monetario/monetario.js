@@ -287,7 +287,7 @@ window.addEventListener('load', function(event) {
   function trow(response){
     if(response.status == '403'){
       $cookies.put('autorization', '')
-      window.location.href = 'http://localhost:8082/login.html';
+      window.location.href = 'https://monetario-back.onrender.com/login.html';
 
     }
   }

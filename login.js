@@ -20,7 +20,7 @@ app.controller("Rest", function ($scope, $cookies, $http) {
     removeNotificacao();
     $http(req).then(function (data) {
       $cookies.put('autorization', data.data.token,{path:'/monetario'})
-      window.location.href = "http://localhost:8082/monetario/monetario.html";
+      window.location.href = "https://monetario-back.onrender.com/monetario/monetario.html";
     },function error(){
       lancaNotificacao();
     });
@@ -28,7 +28,7 @@ app.controller("Rest", function ($scope, $cookies, $http) {
   }
 
   $scope.cadastro = function () {
-    window.location.href = "http://localhost:8082/cadastro/cadastro.html";
+    window.location.href = "https://monetario-back.onrender.com/cadastro/cadastro.html";
   }
 
   $scope.mostrarSenha = function(){
